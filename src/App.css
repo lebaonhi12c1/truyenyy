@@ -1,7 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+*{
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
+.root_container{
+  margin: 0 auto;
+  width: 1150px;
+}
+.color_primary{
+    color: #4497f8;
+}
+.btn_primary{
 
+  background-color: #4497f8;
+  padding: 5px 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn_primary:hover{
+  background-color:#1580fa ;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +65,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+@media (max-width: 739px){
+  .root_container{
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px){
+  .root_container{
+    margin: 0 auto;
+    width: 750px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1239px){
+  .root_container{
+      margin: 0 auto;
+       max-width: 984px;
+   }
 }

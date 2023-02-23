@@ -1,0 +1,6 @@
+.card_category_hover:hover{
+    transition: transform ease-in-out .3s;
+    transform: perspective(600px) rotateY(-35deg);
+    transform-origin: left;
+
+}
